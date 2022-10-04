@@ -1,22 +1,24 @@
-# README
-
-# <Leathers>
+Leathers
 
 ## サイト概要
 ### サイトテーマ
-< 革靴や革で出来た小物× SNS >
+革靴や革で出来た小物× SNS 
+革靴などが好きな人が集まってどういう革靴がおすすめなのかなどを共有しあったり、革靴を購入しようとしている人のために手入れ方法など
+革靴についての情報を発信していくアプリケーション
 
 ### テーマを選んだ理由
-<父親が自営業で革靴を作っており、その作っているものを紹介したいという理由と、革靴好きどうしで情報共有できたら面白いかなと考えたから>
+父親が自営業で革靴を作っており、その作っているものを紹介したいという理由と、革靴好きどうしで情報共有できたら面白いかなと考えたから
+革を扱った専門的なSNSなので、より深く共有することができ革を扱う仕事をしている方にとっても有益なものになると思われます。
 
 ### ターゲットユーザ
-<革靴好き人や、興味がある人>
+革靴好き人や、興味がある人
+革を扱う仕事している方
 
 ### 主な利用シーン
-<革靴が好きの人達が情報を共有したり、革靴に興味を持った人が革靴について色々と知ることができる場所として利用>
+革靴が好きの人達が情報を共有したり、革靴に興味を持った人が革靴について色々と知ることができる場所として利用
 
 ## 設計書
-<データベース設計、アプリケーション詳細設計>
+データベース設計、アプリケーション詳細設計
 
 ## 開発環境
 - OS：Linux(CentOS)
@@ -33,25 +35,3 @@
 
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
