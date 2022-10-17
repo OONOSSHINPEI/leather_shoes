@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'homes/index' => 'homes#index'
   #post 'customers/guest_sign_in', to: 'customers/sessions#guest_sign_in'
     scope module: :public do
-        resources :articles
+        resources :articles, only: [:new, :create, :index, :show]
     end
     
     #namespace :admin do

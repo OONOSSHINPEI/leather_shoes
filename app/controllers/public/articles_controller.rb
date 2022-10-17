@@ -9,11 +9,12 @@ class Public::ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.customer_id = current_customer.id
     @article.save
-    redirect_to article_path
+    redirect_to articles_path
   end
 
   def index
-    @article = Article.all
+    @article = Article.new
+    @articles = Article.all
   end
 
   def show
@@ -27,7 +28,7 @@ class Public::ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:article_name, :image, :caption)
+    params.require(:article).permit(:image, :caption, :customer_id)
   end
     
 end

@@ -1,8 +1,7 @@
-<% @article.each do |article| %>
+<% @articles.each do |article| %>
 <div>
-  <%= image_tag article.get_image %>
-  <p>投稿ユーザー画像：<%= image_tag 'sample-author1.jpg' %></p>
+  <p>投稿ユーザー画像：<%= image_tag article.image %></p>
+  
   <p>説明：<%= article.caption %></p>
-  <p>ユーザーネーム：<%= article.customer.name %></p>
 </div>
 <% end %>
