@@ -1,9 +1,16 @@
-<%= button_to "ログアウト", destroy_customer_session_path, method: :delete %>
+<% if admin_signed_in? %>
+    <%= button_to "会員一覧" %>
+    
+    <%= button_to "ログアウト", destroy_customer_session_path, method: :delete %>
 
-<%= button_to 'ログイン', new_customer_session_path %>
-
-<%= button_to 'ゲストログイン', customers_guest_sign_in_path, method: :post %>
-
- 
-    <%= link_to '投稿フォーム', new_article_path %>
- 
+<% elsif customer_signed_in? %>
+    <%= link_to '投稿フォーム', new_public_article_path %>
+    
+    <%= link_to "ログアウト", destroy_customer_session_path, method: :delete %>
+    
+ <% else %>
+    <%= link_to 'ログインaaaaaaaaaaaaaaaaaaaaaaa', new_customer_session_path %>
+    
+    <%= button_to 'ゲストログイン', customers_guest_sign_in_path, method: :post %>
+     
+<% end %>

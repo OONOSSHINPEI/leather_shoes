@@ -9,7 +9,7 @@ class Public::ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.customer_id = current_customer.id
     @article.save
-    redirect_to articles_path
+    redirect_to public_articles_path
   end
 
   def index

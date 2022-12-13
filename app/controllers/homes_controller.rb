@@ -1,10 +1,11 @@
-class Public::HomesController < ApplicationController
+class HomesController < ApplicationController
     
     def top
     end
     
     def index
-     
+     @article = current_customer
+     @articles 
     end
     
     def guest_sign_in

@@ -1,0 +1,13 @@
+def show
+    @customer = Customer.find(params[:id])
+    @articles = @customer.articles  
+  end
+  
+  def edit
+  end
+  
+  private
+  def customer_params
+    params.require(:customer).permit(:name, :image)
+  end
+  

@@ -1,5 +1,16 @@
+
+<div>
+  
+ 
+  
+  <p>名前: <%= article.customer.name %></p>
+  
+  <p>説明：<%= article.caption %></p>
+</div>
+
+
 <h1>画像投稿フォーム</h1>
-  <%= form_with model: [:public, @article] do |f| %>
+  <%= form_with model: article do |f| %>
     <h4>画像</h4>
       <%= f.file_field :image, accept: "image/*" %>
     

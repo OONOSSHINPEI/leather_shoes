@@ -2,6 +2,8 @@
 <div>
   <p>投稿ユーザー画像：<%= image_tag article.image %></p>
   
+  <p>名前: <%= article.customer.name %></p>
+  
   <p>説明：<%= article.caption %></p>
 </div>
 <% end %>
